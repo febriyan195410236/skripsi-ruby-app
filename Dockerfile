@@ -1,4 +1,4 @@
-FROM ruby:3.2.2-alpine
+FROM public.ecr.aws/docker/library/ruby:3.2.2-alpine
 RUN apk add build-base tzdata
 WORKDIR /app
 COPY Gemfile* .
