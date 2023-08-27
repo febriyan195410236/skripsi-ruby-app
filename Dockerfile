@@ -1,11 +1,5 @@
 FROM ruby:3.2.2-alpine
-  RUN apk add \
-    build-base tzdata
-    # \
-    # postgresql-dev \
-    # tzdata \
-    # nodejs
-  
+RUN apk add build-base tzdata
 WORKDIR /app
 COPY Gemfile* .
 RUN bundle install
