@@ -1,6 +1,6 @@
 FROM ruby:3.2.2-alpine
 
-RUN apk add build-base tzdata
+RUN apk --no-cache add build-base tzdata
 
 WORKDIR /app
 
